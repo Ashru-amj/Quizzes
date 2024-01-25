@@ -1039,10 +1039,11 @@ table {
 .q-sidebar-title {
   color: #474444;
   font-family: Jomhuria;
-  font-size: 70px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  
 }
 
 .form-container {

@@ -21,7 +21,7 @@ function CreateQuizContent({
       `${BACKEND_URL}/quizzes`,
       { title, type: quizType },
       {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { Authorization: `${token}` },
       }
     );
     setQuizId(res.data._id);

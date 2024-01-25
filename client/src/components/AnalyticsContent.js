@@ -69,10 +69,11 @@ const AnalyticsContent =({ quiz })=> {
   const getQuizzes = () => {
     axios
       .get(`${BACKEND_URL}/quizzes`, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { Authorization: `${token}` },
       })
       .then((response) => {
         setData(response.data);
+        console.log(response.data);
       })
       .catch((error) => {
         console.error("API request failed", error);

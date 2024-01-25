@@ -24,7 +24,7 @@
 import React, { useState } from "react";
 
 import "./App.css";
-import { Route, Routes, Navigate, Outlet, useNavigate , BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes, Navigate, Outlet, useNavigate  } from "react-router-dom";
 
 // import Analytics from "./pages/Analytics";
 // import CreateQuiz from "./pages/CreateQuiz";
@@ -33,6 +33,7 @@ import DashBoard from "./pages/DashBoard";
 import Analytics from "./pages/Analytics";
 import QuizAnalytics from "./pages/QuizAnalytics";
 import CreateQuiz from "./pages/CreateQuiz";
+import Sidebar from "./components/Sidebar";
 // import QuestionWise from "./pages/QuestionWise";
 // import QuizScreen from "./components/QuizScreen";
 import { isAuthenticated } from "./utils/Auth";
@@ -58,7 +59,7 @@ function App() {
   return (
 
     <div className="App" >
-      <Router>
+      
       <Routes>
         <Route path="/" element={<LoginSignup/>} />
         <Route
@@ -88,7 +89,7 @@ function App() {
         <Route path="/quiz/:id" element={<QuizScreen/>} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      </Router>
+      
     </div>
   );
 }
