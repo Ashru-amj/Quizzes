@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
+import "../../src/App.css";
 const RegisterPage = () => {
   
     const [name, setName] = useState("");
